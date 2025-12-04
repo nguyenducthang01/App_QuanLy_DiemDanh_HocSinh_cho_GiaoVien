@@ -1,0 +1,137 @@
+/* Reset mặc định và style chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    color: #2c3e50;
+}
+
+/* Heading */
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Table */
+table {
+    width: 100%;
+    max-width: 1400px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-collapse: collapse;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+thead {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: #fff;
+}
+
+th {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background 0.3s ease;
+}
+
+tbody tr:hover {
+    background: #f8f9fa;
+}
+
+td {
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #34495e;
+}
+
+td a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+td a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Export Button */
+.export-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #66ea66, #691cb6);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.export-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.export-btn:active {
+    transform: translateY(0);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, table, .export-btn {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .export-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spkt.app_student_attendance">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="org.apache.http.legacy"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_app"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/icon_app"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App_student_attendance"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ChangePassActivity"></activity>
+        <activity android:name=".VerifyOTPActivity" />
+        <activity android:name=".ForgotPassActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+        </activity>
+        <activity
+            android:name=".StudentActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".AdminActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".TeacherActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity
+            android:name=".AttendenceStudentActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity
+            android:name=".AttendenceTeacherActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity
+            android:name=".RenderQRActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity
+            android:name=".ProfileStudentActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity
+            android:name=".PresentStudentActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity
+            android:name=".PresentTimeStudentActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity
+            android:name=".ChangePasswordStudentActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity
+            android:name=".PresentTeacherActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity
+            android:name=".PresentTimeTeacherActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity
+            android:name=".AbsentTeacherActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+        <activity
+            android:name=".AbsentTimeTeacherActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"></activity>
+             <activity android:name=".SclassListDetailActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".SClassListActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".DeatailStudentActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".StudentListActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".StudentScheduleActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".ScheduleDetailStudentActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".TClassListActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".TclassListDetailActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".TeacherScheduleActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".TDeTailStudentActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".ProfileTeacherActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".ChangePasswordTeacherActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".StudentAdminActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".TeacherAdminActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".UserAdminActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".ClassAdminActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".AddStudentAdminActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".AddTeacherAdminActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".AddSubjectAdminActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name=".AboutActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/> <!-- optional (needed if default theme has no action bar) -->
+    </application>
+
+</manifest>

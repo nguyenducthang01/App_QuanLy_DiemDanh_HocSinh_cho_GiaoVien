@@ -1,0 +1,26 @@
+{
+    "teachers": [
+        {
+            "teacher_id": "T001",
+            "teacher_name": "Nguyễn Văn A",
+            "teacher_birth": "01/01/1980",
+            "teacher_gender": "Nam",
+            "teacher_mail": "nguyenvana@example.com",
+            "teacher_phone": "0123456789",
+            "teacher_image": "images/teacher1.jpg",
+            "status": "Đang giảng dạy"
+        }
+    ],
+    "students": [
+        {
+            "student_id": "S001",
+            "student_name": "Trần Thị B",
+            "student_birth": "15/05/2001",
+            "student_gender": "Nữ",
+            "student_mail": "tranthib@example.com",
+            "student_phone": "0987654321",
+            "student_image": "images/student1.jpg",
+            "status": "Đang học"
+        }
+    ]
+}

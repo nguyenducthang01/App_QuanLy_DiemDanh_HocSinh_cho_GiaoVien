@@ -1,0 +1,137 @@
+/* Reset mặc định và style chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Heading */
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Form */
+#uploadForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#uploadForm label {
+    font-size: 16px;
+    color: #34495e;
+    font-weight: 500;
+    text-align: left;
+}
+
+/* File Input */
+#fileInput {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#fileInput:hover {
+    border-color: #667eea;
+    background: #fff;
+}
+
+#fileInput:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+}
+
+/* Button */
+button {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Message */
+#message {
+    margin-top: 20px;
+    font-size: 14px;
+    min-height: 20px;
+    color: #34495e;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        padding: 25px;
+        width: 90%;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    #fileInput, button {
+        font-size: 14px;
+    }
+}

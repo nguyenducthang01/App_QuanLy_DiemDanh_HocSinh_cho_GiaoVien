@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FHQ Education</string>
+    <string name="do_not_get_otp_recend">Do not get OTP ? <b>Recend</b></string>
+</resources>
